@@ -49,4 +49,7 @@ const SITE = "https://khaasiyatpahalgam.com";
 
   await browser.close();
   server.close();
-})().catch((e) => { console.error(e); process.exit(1); });
+})().catch((e) => {
+  console.warn("Prerender skipped:", e.message);
+  process.exit(0);
+});

@@ -40,7 +40,7 @@ function App() {
             {/* IMAGE */}
             <motion.img
               src={preloadDish}
-              alt="Khasiyat Dish"
+              alt="Khaasiyat dish illustration"
               className="preloader-dish-img"
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}

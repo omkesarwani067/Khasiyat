@@ -47,7 +47,7 @@ const Staff = () => {
 
         {/* RIGHT CONTENT */}
         <div className="staff-right">
-          <img src={require("../assets/Team/team1.jpeg")} alt=""/>
+          <img src={require("../assets/Team/team1.jpeg")} alt="Khaasiyat restaurant team and founder, Pahalgam"/>
         </div>
 
       </div>

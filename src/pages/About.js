@@ -16,7 +16,7 @@ const About = () => {
 
         {/* LEFT IMAGE */}
         <div className="about-page-left">
-          <img src={require("../assets/cafe/khasiyat front1.jpeg")} alt="About Restaurant" />
+          <img src={require("../assets/cafe/khasiyat front1.jpeg")} alt="Khaasiyat pure veg restaurant exterior in Pahalgam" />
         </div>
 
         {/* RIGHT CONTENT */}
@@ -48,19 +48,19 @@ const About = () => {
         <div className="aboutcardssection-row">
 
           <div className="aboutcardssection-card">
-            <img src={require("../assets/foodcard1.jpg")} alt="card1" />
+            <img src={require("../assets/foodcard1.jpg")} alt="Vegetarian food served at Khaasiyat restaurant" />
           </div>
 
           <div className="aboutcardssection-card">
-            <img src={require("../assets/foodcard2.jpg")} alt="card2" />
+            <img src={require("../assets/foodcard2.jpg")} alt="Fresh ingredients used in Khaasiyat's pure veg dishes" />
           </div>
 
           <div className="aboutcardssection-card">
-            <img src={require("../assets/foodcard3.jpg")} alt="card3" />
+            <img src={require("../assets/foodcard3.jpg")} alt="Kashmiri cuisine specialties at Khaasiyat, Pahalgam" />
           </div>
 
           <div className="aboutcardssection-card">
-            <img src={require("../assets/foodcard4.jpg")} alt="card4" />
+            <img src={require("../assets/foodcard4.jpg")} alt="Desserts and sweets at Khaasiyat restaurant" />
           </div>
 
         </div>

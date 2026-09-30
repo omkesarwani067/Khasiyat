@@ -99,7 +99,7 @@ const Home = () => {
       </motion.section>
 
   <motion.section
-        id="review"
+        id="our-story"
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
@@ -108,25 +108,27 @@ const Home = () => {
         <Staff/>
       </motion.section>
 
-      {/* ✅ REVIEW */}
+      {/* ✅ REVIEWS */}
       <motion.section
-        id="review"
+        id="reviews"
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
       >
+        <span id="review" style={{ display: "none" }}></span>
         <Testimonial />
       </motion.section>
 
       {/* ✅ CONTACT */}
       <motion.section
-        id="connect"
+        id="contact"
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
       >
+        <span id="connect" style={{ display: "none" }}></span>
         <Connect />
       </motion.section>
 

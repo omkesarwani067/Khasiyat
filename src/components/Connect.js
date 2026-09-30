@@ -10,7 +10,7 @@ const Connect = () => {
 
           {/* LEFT IMAGE */}
           <div className="connect-left">
-            <img src={require("../assets/connect2.png")} alt="Newsletter" />
+            <img src={require("../assets/connect2.png")} alt="Stay connected with Khaasiyat restaurant in Pahalgam" />
           </div>
 
           {/* RIGHT CONTENT */}
@@ -18,7 +18,7 @@ const Connect = () => {
 
             <div className="connect-heading">
               <h5 className="heading-tag">Connect With Us</h5>
-              {/* <h2 className="page-heading"></h2> */}
+              <h2 className="page-heading">Stay Connected With Khaasiyat</h2>
               <p className="page-description">
              Be the first to know about our special menus, exciting offers & memorable moments.
               </p>
@@ -26,15 +26,30 @@ const Connect = () => {
 
             {/* SOCIAL ICONS */}
             <div className="connect-social">
-              <a href="https://www.instagram.com/khaasiyatpahalgam/"><FaInstagram /></a>
-              <a href="https://www.facebook.com/profile.php?id=61575212754670"><FaFacebookF /></a>
-    <a
-  href="https://wa.me/919103358985"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <FaWhatsapp />
-</a>
+              <a
+                href="https://www.instagram.com/khaasiyatpahalgam/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61575212754670"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <FaFacebookF />
+              </a>
+              <a
+                href="https://wa.me/919103358985"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+              >
+                <FaWhatsapp />
+              </a>
             </div>
 
             {/* CALL */}

@@ -13,7 +13,7 @@ const Footer = () => {
           <img
             src={require("../assets/khasiyat-logo.png")}
             className="footer-logo"
-            alt="logo"
+            alt="Khaasiyat Restaurant logo"
           />
 
           <p className="footer-desc">
@@ -83,10 +83,24 @@ const Footer = () => {
 
   <li>
     <a
+      href="#reviews"
+      onClick={(e) => {
+        e.preventDefault();
+        document.getElementById("reviews")?.scrollIntoView({
+          behavior: "smooth",
+        });
+      }}
+    >
+      Reviews
+    </a>
+  </li>
+
+  <li>
+    <a
       href="#contact"
       onClick={(e) => {
         e.preventDefault();
-        document.getElementById("connect")?.scrollIntoView({
+        document.getElementById("contact")?.scrollIntoView({
           behavior: "smooth",
         });
       }}

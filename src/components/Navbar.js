@@ -32,29 +32,84 @@ const Navbar = () => {
 
     {/* LOGO */}
     <div className="navbar-logo">
-      <img src={require("../assets/khasiyat-logo.png")} alt="logo" />
+      <a
+        href="#home"
+        onClick={(e) => {
+          e.preventDefault();
+          scrollToSection("home");
+        }}
+      >
+        <img src={require("../assets/khasiyat-logo.png")} alt="Khaasiyat Restaurant home" />
+      </a>
     </div>
 
     {/* RIGHT SIDE (LINKS + SOCIAL) */}
     <div className="navbar-right">
 
       <div className="navbar-links">
-        <span onClick={() => scrollToSection("home")}>Home</span>
-        <span onClick={() => scrollToSection("menu")}>Menu</span>
-        <span onClick={() => scrollToSection("review")}>Review</span>
-        <span onClick={() => scrollToSection("connect")}>Stay Connected</span>
+        <a
+          href="#home"
+          onClick={(e) => {
+            e.preventDefault();
+            scrollToSection("home");
+          }}
+        >
+          Home
+        </a>
+        <a
+          href="#menu"
+          onClick={(e) => {
+            e.preventDefault();
+            scrollToSection("menu");
+          }}
+        >
+          Menu
+        </a>
+        <a
+          href="#reviews"
+          onClick={(e) => {
+            e.preventDefault();
+            scrollToSection("reviews");
+          }}
+        >
+          Reviews
+        </a>
+        <a
+          href="#contact"
+          onClick={(e) => {
+            e.preventDefault();
+            scrollToSection("contact");
+          }}
+        >
+          Stay Connected
+        </a>
       </div>
 
       <div className="navbar-social">
-        <a href="https://www.instagram.com/khaasiyatpahalgam/"><FaInstagram /></a>
-        <a href="https://www.facebook.com/profile.php?id=61575212754670"><FaFacebookF /></a>
-    <a
-  href="https://wa.me/919103358985"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <FaWhatsapp />
-</a>
+        <a
+          href="https://www.instagram.com/khaasiyatpahalgam/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <FaInstagram />
+        </a>
+        <a
+          href="https://www.facebook.com/profile.php?id=61575212754670"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook"
+        >
+          <FaFacebookF />
+        </a>
+        <a
+          href="https://wa.me/919103358985"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="WhatsApp"
+        >
+          <FaWhatsapp />
+        </a>
       </div>
 
     </div>
@@ -69,21 +124,68 @@ const Navbar = () => {
 
       {/* SIDEBAR */}
       <div className={`sidebar ${menuOpen ? "open" : ""}`}>
-        <span onClick={() => scrollToSection("home")}>Home</span>
-        <span onClick={() => scrollToSection("menu")}>Menu</span>
-        <span onClick={() => scrollToSection("review")}>Review</span>
-        <span onClick={() => scrollToSection("connect")}>Get in Touch</span>
+        <a
+          href="#home"
+          onClick={(e) => {
+            e.preventDefault();
+            scrollToSection("home");
+          }}
+        >
+          Home
+        </a>
+        <a
+          href="#menu"
+          onClick={(e) => {
+            e.preventDefault();
+            scrollToSection("menu");
+          }}
+        >
+          Menu
+        </a>
+        <a
+          href="#reviews"
+          onClick={(e) => {
+            e.preventDefault();
+            scrollToSection("reviews");
+          }}
+        >
+          Reviews
+        </a>
+        <a
+          href="#contact"
+          onClick={(e) => {
+            e.preventDefault();
+            scrollToSection("contact");
+          }}
+        >
+          Stay Connected
+        </a>
 
         <div className="sidebar-social">
-          <a href="https://www.instagram.com/khaasiyatpahalgam/"><FaInstagram /></a>
-          <a href="https://www.facebook.com/profile.php?id=61575212754670"><FaFacebookF /></a>
-<a
-  href="https://wa.me/919103358985"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <FaWhatsapp />
-</a>
+          <a
+            href="https://www.instagram.com/khaasiyatpahalgam/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <FaInstagram />
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=61575212754670"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+          >
+            <FaFacebookF />
+          </a>
+          <a
+            href="https://wa.me/919103358985"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp"
+          >
+            <FaWhatsapp />
+          </a>
         </div>
       </div>
     </>

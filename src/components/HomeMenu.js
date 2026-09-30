@@ -80,7 +80,7 @@ useEffect(() => {
       key={currentImg}
       src={activeImages[currentImg] || activeImages[0]}
       className={`menu-img ${fade ? "show" : ""}`}
-      alt="food"
+      alt={`${active} at Khaasiyat pure veg restaurant, Pahalgam`}
     />
   </div>
 
@@ -110,7 +110,7 @@ useEffect(() => {
       /* 🔥 CENTER HEADING */
       <div key={i} className="HomeMenu-middle-heading">
         <span></span>
-        <h2>{item.heading}</h2>
+        <h4>{item.heading}</h4>
         <span></span>
       </div>
 

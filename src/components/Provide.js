@@ -3,9 +3,9 @@ import "./Provide.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const signatureImages = [
-  require("../assets/provide1.png"),
-   require("../assets/provide2.png"),
-   require("../assets/provide3.png"),
+  { src: require("../assets/provide1.png"), alt: "Premium pure veg dining experience at Khaasiyat, Pahalgam" },
+  { src: require("../assets/provide2.png"), alt: "Banquet and private event setup at Khaasiyat restaurant" },
+  { src: require("../assets/provide3.png"), alt: "Khaasiyat team delivering food to hotel rooms in Pahalgam" },
 ];
 
 const Provide = () => {
@@ -90,8 +90,8 @@ const Provide = () => {
                 {signatureImages.map((image, index) => (
                   <img
                     key={index}
-                    src={image}
-                    alt={`signature-${index}`}
+                    src={image.src}
+                    alt={image.alt}
                     className="signature-image"
                   />
                 ))}

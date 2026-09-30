@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 import "./HomeAbout.css";
 
 const images = [
-  require("../assets/cafe/khasiyat front1.jpeg"),
-  require("../assets/cafe/khasiyat front2.jpeg"),
-  require("../assets/cafe/khasiyat front3.jpeg"),
-  require("../assets/cafe/khasiyat front4.jpeg"),
-  require("../assets/cafe/khasiyat front5.jpeg"),
-  require("../assets/cafe/khasiyat front6.jpeg"),
-  require("../assets/cafe/khasiyat front7.jpeg"),
+  { src: require("../assets/cafe/khasiyat front1.jpeg"), alt: "Exterior of Khaasiyat pure veg restaurant in Pahalgam" },
+  { src: require("../assets/cafe/khasiyat front2.jpeg"), alt: "Khaasiyat restaurant entrance with scenic Pahalgam backdrop" },
+  { src: require("../assets/cafe/khasiyat front3.jpeg"), alt: "Khaasiyat dining area and outdoor seating in Pahalgam" },
+  { src: require("../assets/cafe/khasiyat front4.jpeg"), alt: "Khaasiyat restaurant front view in Pahalgam valley" },
+  { src: require("../assets/cafe/khasiyat front5.jpeg"), alt: "Khaasiyat restaurant ambience and decor, Pahalgam" },
+  { src: require("../assets/cafe/khasiyat front6.jpeg"), alt: "Welcoming ambience at Khaasiyat, pure veg restaurant Pahalgam" },
+  { src: require("../assets/cafe/khasiyat front7.jpeg"), alt: "Khaasiyat restaurant interior seating and dining space" },
 ];
 
 const HomeAbout = () => {
@@ -31,8 +31,8 @@ const HomeAbout = () => {
           <div className="image-wrapper">
             <img
               key={current} /* 🔥 important for re-animation */
-              src={images[current]}
-              alt="restaurant"
+              src={images[current].src}
+              alt={images[current].alt}
             />
           </div>
         </div>

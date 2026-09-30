@@ -2,12 +2,12 @@ import React, { useState, useEffect, useCallback } from "react";
 import "./Gallery.css";
 
 const galleryImages = [
-  require("../assets/cafe/khasiyat front1.jpeg"),
-  require("../assets/cafe/khasiyat front2.jpeg"),
-  require("../assets/food/food1.jpeg"),
-  require("../assets/food/food2.jpeg"),
-  require("../assets/cafe/khasiyat front4.jpeg"),
-  require("../assets/food/food3.jpeg"),
+  { src: require("../assets/cafe/khasiyat front1.jpeg"), alt: "Khaasiyat restaurant exterior with mountain view, Pahalgam" },
+  { src: require("../assets/cafe/khasiyat front2.jpeg"), alt: "Khaasiyat restaurant front, popular pure veg dining in Pahalgam" },
+  { src: require("../assets/food/food1.jpeg"), alt: "Freshly prepared vegetarian dish served at Khaasiyat, Pahalgam" },
+  { src: require("../assets/food/food2.jpeg"), alt: "Authentic Indian vegetarian platter at Khaasiyat restaurant" },
+  { src: require("../assets/cafe/khasiyat front4.jpeg"), alt: "Dining area and ambience at Khaasiyat, Pahalgam" },
+  { src: require("../assets/food/food3.jpeg"), alt: "Signature dish from Khaasiyat pure veg restaurant, Pahalgam" },
 ];
 
 /**
@@ -113,7 +113,7 @@ const Gallery = () => {
                 }
               }}
             >
-              <img src={src} alt={`slide-${idx}`} />
+              <img src={src.src} alt={src.alt} />
             </div>
           );
         })}
@@ -147,8 +147,8 @@ const Gallery = () => {
 
             {/* Image */}
             <img
-              src={galleryImages[selectedIndex]}
-              alt="preview"
+              src={galleryImages[selectedIndex].src}
+              alt={galleryImages[selectedIndex].alt}
             />
 
             {/* Right Arrow */}
